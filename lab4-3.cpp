@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
   //declare named constant and variables
-  const double COMM_RATE = 0.0;
+  double COMM_RATE = 0.0;
   double sales = 0.0;
   double commission = 0.0;
 
@@ -16,10 +16,10 @@ int main()
   cin >> sales;
 
   cout << "Commission rate as decimal";
-  cin << COMM_RATE;
+  cin >> COMM_RATE;
 
   commission = sales * COMM_RATE;
-  cout << "Commission: " << commission << end1;
+  cout << "Commission: " << commission << endl;
 
 return 0;
 
