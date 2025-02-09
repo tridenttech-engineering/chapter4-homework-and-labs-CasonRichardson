@@ -13,7 +13,7 @@ int main()
   cin >> sales;
 
   commission = sales * COMM_RATE;
-  cout << "Commission =  $" << commission << end1; 
+  cout << "Commission =  $" << commission;
   
 return 0;
 } //end of main function
@@ -22,3 +22,6 @@ Sales amount: 1328.50
 Commission: $132.85
 Press any key to continue . . .
 */
+make clean
+make lab4-2
+./lab4-2
