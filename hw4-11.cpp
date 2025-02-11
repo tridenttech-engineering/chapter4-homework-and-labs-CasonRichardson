@@ -24,3 +24,7 @@ int main() {
   
 return 0;
 } // end of main function
+
+make clean
+make hw4-11
+./hw4-11
