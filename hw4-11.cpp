@@ -25,6 +25,5 @@ int main() {
 return 0;
 } // end of main function
 
-make clean
-make hw4-11
-./hw4-11
+make test_hw4-11
+./test_files/test_hw4-11
