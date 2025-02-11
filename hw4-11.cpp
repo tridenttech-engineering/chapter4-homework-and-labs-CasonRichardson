@@ -6,24 +6,22 @@ using namespace std;
 
 int main() {
 
-  double salePrice = 0.0;
-  double taxRate = 0.0;
-  double salesTax = 0.0;
-  double cost = 0.0;
+  double beginningBalance = 0.0;
+  double totalDeposits = 0.0;
+  double totalWithdrawals = 0.0;
+  double balance = 0.0;
 
-  cout << "Enter the sale price: ";
-  cin >> salePrice;
-  cout << "Enter the sales tax rate: ";
-  cin >> taxRate;
+  cout << "Enter beginning balance: $";
+  cin >> beginningBalance;
+  cout << "Enter total deposits: $";
+  cin >> totalDeposits;
+  cout << "Enter total withdrawals: $";
+  cin >> totalWithdrawals;
 
-  salesTax = salePrice * taxRate;
+  balance = beginningBalance + totalDeposits - totalWithdrawals;
 
-  cost = salePrice + salesTax;
-
-  cout << "Cost: $" << cost << endl;
+  cout << "Balance: $" << balance << endl;
   
 return 0;
 } // end of main function
 
-make test_hw4-11
-./test_files/test_hw4-11
