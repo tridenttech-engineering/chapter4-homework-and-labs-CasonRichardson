@@ -21,13 +21,13 @@ int main()
 	cout << "Store 2 sales: ";
 	cin >> store2;
 
-	store1Int = static_cast<int>(store1 * increase * 100 * 0.5);
-	store2Int = static_cast<int>(store2 * increase * 100 * 0.5);
+	store1Int = static_cast<int>(store1 * increase * 100 + 0.5);
+	store2Int = static_cast<int>(store2 * increase * 100 + 0.5);
 	totalInt = store1Int + store2Int;
 
 	cout << fixed << setprecision(2) << endl;
-	cout << store1 / 100.0 << " --->Store 1" << endl;
-	cout << store2 / 100.0 << " --->Store 2" << endl;
+	cout << store1Int / 100.0 << " --->Store 1" << endl;
+	cout << store2Int / 100.0 << " --->Store 2" << endl;
 	cout << "-----------------" << endl;
 	cout << totalInt / 100.0 << " --->Total" << endl;
 	
